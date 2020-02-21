@@ -1,0 +1,34 @@
+/* autoprefixer grid: autoplace */
+.css-grid-container {
+  display: grid;
+  column-gap: 10px;
+  row-gap: 10px;
+  grid-template-columns: 100px 100px;
+  grid-template-rows: 100px 100px;
+  grid-template-areas:
+    "row1-col1 row1-col2"
+    "row2-col1 row2-col2";
+
+  .col {
+    padding: 16px;
+  }
+  .row1-col1 {
+    grid-area: row1-col1;
+    border: 1px solid #f00;
+  }
+
+  .row1-col2 {
+    grid-area: row1-col2;
+    border: 1px solid #00f;
+  }
+
+  .row2-col1 {
+    grid-area: row2-col1;
+    border: 1px solid #00f;
+  }
+
+  .row2-col2 {
+    grid-area: row2-col2;
+    border: 1px solid #f00;
+  }
+}
